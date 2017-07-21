@@ -10,18 +10,28 @@
     <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="scripts/tool.js"></script>
     <script src="scripts/index.js"></script>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/common.css">
 </head>
 <body>
 <header>
-    <input type="text" class="search">
-    <div class="menu"></div>
     <div class="logo"></div>
+    <div class="search">
+        <input type="text" placeholder="搜索商品、品牌">
+    </div>
+    <div class="menu"></div>
     <div class="user"></div>
 </header>
 <div class="scroll-data">
     <div class="scroll-container">
         <div class="module">
-            <seciton class="map"></seciton>
+            <section class="map">
+                <div class="map-column"><a href=""><img src="https://gw.alicdn.com/tfs/TB11OCuRpXXXXaBXFXXXXXXXXXX-230-230.png?avatar=1" alt=""><span>苏宁易购</span></a></div>
+                <div class="map-column"><a href=""><img src="https://gw.alicdn.com/tfs/TB1OaIwRXXXXXapXpXXXXXXXXXX-230-230.png?avatar=1" alt=""><span>天猫超市</span></a></div>
+                <div class="map-column"><a href=""><img src="https://gw.alicdn.com/tfs/TB1I9ApRXXXXXcGXpXXXXXXXXXX-230-230.png?avatar=1" alt=""><span>天猫国际</span></a></div>
+                <div class="map-column"><a href=""><img src="https://gw.alicdn.com/tfs/TB126IaRXXXXXcXXVXXXXXXXXXX-230-230.png?avatar=1" alt=""><span>聚划算</span></a></div>
+                <div class="map-column"><a href=""><img src="https://gw.alicdn.com/tfs/TB1NTkrRXXXXXcKXpXXXXXXXXXX-230-230.png?avatar=1" alt=""><span>分类</span></a></div>
+            </section>
             <section class="carousel"></section>
             <div class="hot-item"></div>
         </div>
@@ -29,4 +39,5 @@
 </div>
 
 </body>
+<script src="scripts/index.js"></script>
 </html>

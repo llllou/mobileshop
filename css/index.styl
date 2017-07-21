@@ -1,9 +1,98 @@
-header
-  width:10rem
-  background #ff0036;
-  -webkit-background-size: background-size 100%
+body
+  width 100%
 
+header
+  position relative
+  left 0
+  top: 0
+  z-index 9999
+  padding-bottom: 0.1rem
+  width:100%
+  background #ff0036;
+  -webkit-background-size: 100%
+  background-size 100%
+
+
+
+  .logo
+    margin 0 auto
+    width logoWidth=2.82666rem
+    height .653333rem
+    background: url("https://gw.alicdn.com/tfs/TB1HWNORFXXXXciaXXXXXXXXXXX-800-140.png") no-repeat center
+    background-size cover
+
+
+  .menu
+    position absolute
+    width .6rem
+    height .6rem
+    top 0.1rem
+    left .25rem
+    background: url("../img/menu.png") no-repeat center
+    background-size cover
+
+  .search
+    display block
+    position relative
+    margin 0.2rem auto 0
+    width 90%
+    height 0.8rem
+
+    input
+      display block
+      padding 0 0 0 0.8rem
+      width 100%
+      height:100%
+      outline:none
+      border 0
+
+  .search::before
+      content ""
+      position absolute
+      left 0.05rem
+      top 0.13rem
+      width: .6rem
+      height: .6rem
+      background url(../img/search_32px_1187938_easyicon.net.png) no-repeat 0 0
+      background-size cover
+
+  .search::after
+    content ""
+    clear both
+    width:100%
 
 .scroll-data
   overflow hidden
-  height 100% -
+  height 100%
+  width 100%
+  background-color: #eee
+
+  .scroll-container
+    width 100%
+    transform translateX(0)
+
+    .module
+
+      .map
+        display -webkit-box
+        -webkit-box-orient horizontal
+        box-sizing border-box
+        width: 100%
+        background-color: #fff
+
+        .map-column
+          -webkit-box-sizing border-box
+          -moz-box-sizing border-box
+          box-sizing flex
+          -webkit-flex 1
+          -moz-box-flex 1
+          flex auto
+          padding 0.311rem
+          height 100%
+          text-align center
+
+          img
+            display block
+            margin 0.13333rem auto
+            width 1rem
+            height: 1rem
