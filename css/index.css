@@ -2,12 +2,11 @@ body {
   width: 100%;
 }
 header {
-  position: relative;
+  position: fixed;
   left: 0;
-  top: 0;
-  z-index: 9999;
+  z-index: 99;
   padding-bottom: 0.1rem;
-  width: 100%;
+  width: 10rem;
   background: #ff0036;
   -webkit-background-size: 100%;
   background-size: 100%;
@@ -58,15 +57,91 @@ header .search::after {
   clear: both;
   width: 100%;
 }
-.scroll-data {
-  overflow: hidden;
+header aside {
+  display: none;
+  position: fixed;
+  left: -8rem;
+  top: 0;
+  z-index: 999;
   height: 100%;
+  width: 8rem;
+  background-color: #e1e1e1;
+}
+header aside .mask {
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding-left: 1rem;
+  width: 2rem;
+  height: 100%;
+  background-color: rgba(0,0,0,0.3);
+  font-size: 12px;
+  color: #fff;
+  writing-mode: vertical-lr;
+  text-align: center;
+}
+header aside h1 {
+  float: left;
+  margin-top: 0;
+  margin-bottom: 0;
   width: 100%;
+  height: 1rem;
+  border-bottom: 1px solid #3c3c3c;
+  font-size: 0.4rem;
+  color: #333;
+  line-height: 1rem;
+  text-indent: 1rem;
+}
+header aside .list {
+  float: left;
+  height: 100%;
+}
+header aside .list .list-name {
+  width: 1.5rem;
+  height: 1rem;
+  text-align: center;
+  line-height: 1rem;
+  border-bottom: 1px solid #7a43b6;
+  font-size: 0.3rem;
+  color: #3c3c3c;
+}
+header aside .list .list-name.current {
+  background-color: #fff;
+  border-right: none;
+}
+header aside .show {
+  float: right;
+  width: 6.5rem;
+  height: calc(100% - 1rem);
+  background-color: #fff;
+}
+header aside .show >div {
+  float: left;
+  padding: 0.3rem;
+  width: calc(50% - 0.6rem);
+  height: 3rem;
+}
+header aside .show >div img {
+  display: block;
+  margin: 0.2rem auto;
+  width: 60%;
+  height: 60%;
+}
+header aside .show >div p {
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.scroll-data {
+  padding-top: 1.8rem;
+  width: 100%;
+  height: auto;
   background-color: #eee;
 }
 .scroll-data .scroll-container {
   width: 100%;
-  transform: translateX(0);
+  transform: translateX(0) translateY(0px);
 }
 .scroll-data .scroll-container .module .map {
   display: -webkit-box;
@@ -100,4 +175,50 @@ header .search::after {
 .scroll-data .scroll-container .carousel ul {
   height: 100%;
   margin-bottom: 0;
+}
+.scroll-data .scroll-container .carousel ul li {
+  float: left;
+  height: 100%;
+  width: 100%;
+}
+.scroll-data .scroll-container .carousel ul li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.scroll-data .scroll-container .carousel ul li a img {
+  margin: 0 auto;
+  height: 100%;
+}
+.scroll-data .hot-item {
+  width: 100%;
+  margin-top: 1rem;
+  background-color: #eee;
+}
+.scroll-data .hot-item .hot-head {
+  height: 1rem;
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+  color: #ffa500;
+  background: url("https://img.alicdn.com/tps/TB1t9n6LFXXXXaXXXXXXXXXXXXX-60-60.png") no-repeat 40% center;
+}
+.scroll-data .hot-item .item-column {
+  float: left;
+  box-sizing: border-box;
+  width: 40%;
+  margin: 0.2rem 5% 0.2rem 5%;
+}
+.scroll-data .hot-item .item-column img {
+  width: 100%;
+  margin-bottom: 0.2rem;
+}
+.scroll-data .hot-item .item-column span {
+  display: block;
+  max-width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  text-align: center;
+  color: #3c3c3c;
 }

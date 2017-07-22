@@ -7,9 +7,9 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/zepto/zepto.min.js"></script>
+    <script src=""></script>
     <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="scripts/tool.js"></script>
-    <script src="scripts/index.js"></script>
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/common.css">
 </head>
@@ -21,6 +21,12 @@
     </div>
     <div class="menu"></div>
     <div class="user"></div>
+    <aside>
+        <div class="mask">点击此处返回</div>
+        <h1>全部分类</h1>
+        <div class="list"></div>
+        <div class="show"></div>
+    </aside>
 </header>
 <div class="scroll-data">
     <div class="scroll-container">
@@ -32,12 +38,25 @@
                 <div class="map-column"><a href=""><img src="https://gw.alicdn.com/tfs/TB126IaRXXXXXcXXVXXXXXXXXXX-230-230.png?avatar=1" alt=""><span>聚划算</span></a></div>
                 <div class="map-column"><a href=""><img src="https://gw.alicdn.com/tfs/TB1NTkrRXXXXXcKXpXXXXXXXXXX-230-230.png?avatar=1" alt=""><span>分类</span></a></div>
             </section>
-            <section class="carousel"></section>
-            <div class="hot-item"></div>
+            <section class="carousel">
+                <ul>
+                    <li><a href=""><img src="" alt=""></a></li>
+                    <li><a href=""><img src="" alt=""></a></li>
+                    <li><a href=""><img src="" alt=""></a></li>
+                    <li><a href=""><img src="" alt=""></a></li>
+                    <li><a href=""><img src="" alt=""></a></li>
+                </ul>
+            </section>
+            <div class="hot-item">
+                <div class="hot-head">
+                    超实惠
+                </div>
+            </div>
         </div>
     </div>
 </div>
 
 </body>
+<script src="scripts/tool.js"></script>
 <script src="scripts/index.js"></script>
 </html>
