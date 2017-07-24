@@ -2,6 +2,7 @@ window.onload = function () {
   init();
   checkLogin();
   search();
+  window.onresize=init;
 //生成界面
   $.get("http://h6.duchengjiu.top/shop/api_goods.php", {"pagesize": "20"}, function (response) {
     var itemContainer = document.querySelector(".hot-item");

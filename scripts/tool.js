@@ -1,3 +1,8 @@
+var option;
+option ={
+ "detail": "http://h6.duchengjiu.top/shop/api_goods.php",
+  "search":"http://h6.duchengjiu.top/shop/api_goods.php"
+};
 var init=function() {
   $("html").css("font-size", window.innerWidth / 10 + "px");
 };
@@ -21,4 +26,12 @@ function checkLogin(){
   {
     $(".user").append("<a href='login.html' class='user-login'>登录</a> ")
   }
+}
+function getQuery(name){
+  var reg = new RegExp('(^|&)' + name + '=([^&]*)(&|$)', 'i');
+  var r = window.location.search.substr(1).match(reg);
+  if (r != null) {
+    return decodeURIComponent(r[2]);
+  }
+  return null;
 }

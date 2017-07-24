@@ -5,9 +5,38 @@
     <meta name="viewport" content="width=device-width,max-scale=2.0,intial-scale=1.0">
     <link rel="stylesheet" href="css/reset.css">
     <script src="bower_components/zepto/zepto.min.js"></script>
-    <link rel="stylesheet" href="css/login.css">
+    <script src="bower_components/swiper/dist/js/swiper.min.js"></script>
+    <link rel="stylesheet" href="bower_components/swiper/dist/css/swiper.min.css">
+    <link rel="stylesheet" href="css/detail.css">
+    <link rel="stylesheet" href="css/common.css">
+    <script src="scripts/tool.js"></script>
 </head>
 <body>
-
+<header>
+    <ul>
+        <li class="current"><span>基本信息</span></li>
+        <li><span>商品详情</span></li>
+        <li><span>评价</span></li>
+    </ul>
+</header>
+<section class="swiper-container">
+    <div class="swiper-wrapper">
+        <div class="container">
+            <div class="item-img"><img src="" alt=""></div>
+            <h3 class="name"></h3>
+            <div class="price"></div>
+        </div>
+        <div class="container">
+            <div class="des"></div>
+            <div class="custom">
+                <p>购物流程</p>
+                <img src="https://img.alicdn.com/tps/TB1Aa0FMXXXXXaaXpXXXXXXXXXX-750-220.png_Q30.jpg" alt="">
+            </div>
+        </div>
+        <div class="container"></div>
+    </div>
+</section>
+<button></button>
 </body>
+<script src="scripts/detail.js"></script>
 </html>
