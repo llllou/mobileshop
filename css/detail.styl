@@ -12,9 +12,11 @@ header
     display -webkit-box-flex
     display -moz-box-flex
     display flex
+    z-index 9
     flex-direction row
     width inherit
     height inherit
+    border-bottom:1px solid #adadad
 
     li
       -webkit-flex 1
@@ -24,6 +26,8 @@ header
       height 100%
       border-top: 2px solid transparent
       text-align center
+      background-color: #fff
+
 
       span
         display block
@@ -38,56 +42,117 @@ header
       border-top-color #ff0036
 
 section
-  margin-top 1rem
+  margin-top 1.1rem
 
   .container
+
+    .item
+      background-color: #fff
+      padding 0.5rem
+
     img
-      width:10rem
+      width:9rem
 
     h3
       margin-bottom:1rem
-      font-size 0.4rem
-      color #3c3c3c
+      font-size 0.45rem
+      line-height 0.6rem
+      color black
+      background-color: #fff;
 
     .price
       font-size 0.5rem
       color #ff0000;
+      background-color: #fff;
 
     .custom
-      width 10rem
-      height 3rem
+      width 9.4rem
+      padding 0.3rem
       margin-bottom 0.3rem
-      background-color: #eee
+      background-color: #eee;
 
-        p
-          font-size 0.5rem
+      img
+        width 100%
+      p
+        font-size 0.6rem
+        padding 0.4rem 0;
 
 
     .des
       padding 0.3rem
       background-color: #cfcfcc
-      font-size 0.5rem
+      font-size .4rem
+      color black
+      background-color: #fff;
+
+    .item-foot
+      display -webkit-flex
+      position relative
+      margin-top 0.5rem
+      padding 14px 35px
+      width calc(10rem - 70px)
+      height 1.5rem
+      background-color: #fff
+
+      .cell
+        -webkit-flex 1
+        height 100%
+
+        img
+          display block
+          margin 0 auto
+          height .5
+          width .5rem
+
+        span
+          display block
+          margin-top 0.5rem
+          width 100%
+          text-align center
+          font-size 0.3rem
+
+      .cell:nth-child(2)::after
+        position absolute
+        left 25.5%
+        top 27%
+        content " "
+        width 2.28rem
+        height 2px
+        background-color: #3c3c3c
+        z-index 9
+
+      .cell:nth-child(2)::before
+        position absolute
+        right 25%
+        top 27%
+        content " "
+        width 2.28rem
+        height 2px
+        background-color: #3c3c3c
+        z-index 9
 
 button
   position fixed
-  bottom 1rem
+  bottom 0.5rem
   display block
+  z-index 99999
   left 0.5rem
-  width 0.6rem
-  height: 0.6rem
+  width 0.8rem
+  height: 0.8rem
   border none
   outline: none
   border-radius 50%
-  background-color: rgba(0,0,0,0.3)
+  background-color: rgba(0,0,0,0.7)
 
-  &::after
-    content ""
-    position absolute
-    top 0
-    left 0
-    width 100%
-    height 100%
-    background url("../img/cart.png") no-repeat 0 0
+button::after
+  content ""
+  position absolute
+  top 0
+  left 0
+  width 100%
+  height 100%
+  background url("../img/cart.png") no-repeat 40% 40%;
+  background-size 60%
 
 
 
