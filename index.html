@@ -5,46 +5,60 @@
     <title>淘宝触屏版</title>
     <meta name="viewport" content="width=device-width,initial-scale=1.0,max-scale=2.0">
     <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/zepto/zepto.min.js"></script>
-    <script src=""></script>
-    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="bower_components/swiper/dist/js/swiper.jquery.min.js"></script>
+    <link rel="stylesheet" href="bower_components/swiper/dist/css/swiper.min.css">
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/common.css">
 </head>
 <body>
 <header>
     <div class="logo"></div>
-    <div class="search">
-        <input type="text" placeholder="搜索商品、品牌">
-    </div>
+    <form action="" method="get" id="searchbar">
+        <div class="search">
+            <input type="search" placeholder="搜索商品、品牌" >
+        </div>
+    </form>
     <div class="menu"></div>
     <div class="user"></div>
     <aside>
         <div class="mask">点击此处返回</div>
         <h1>全部分类</h1>
         <div class="list"></div>
-        <div class="show"></div>
+        <div class="show-container">
+            <div class="show"></div>
+        </div>
     </aside>
 </header>
 <div class="scroll-data">
     <div class="scroll-container">
         <div class="module">
             <section class="map">
-                <div class="map-column"><a href=""><img src="https://gw.alicdn.com/tfs/TB11OCuRpXXXXaBXFXXXXXXXXXX-230-230.png?avatar=1" alt=""><span>苏宁易购</span></a></div>
-                <div class="map-column"><a href=""><img src="https://gw.alicdn.com/tfs/TB1OaIwRXXXXXapXpXXXXXXXXXX-230-230.png?avatar=1" alt=""><span>天猫超市</span></a></div>
-                <div class="map-column"><a href=""><img src="https://gw.alicdn.com/tfs/TB1I9ApRXXXXXcGXpXXXXXXXXXX-230-230.png?avatar=1" alt=""><span>天猫国际</span></a></div>
-                <div class="map-column"><a href=""><img src="https://gw.alicdn.com/tfs/TB126IaRXXXXXcXXVXXXXXXXXXX-230-230.png?avatar=1" alt=""><span>聚划算</span></a></div>
-                <div class="map-column"><a href=""><img src="https://gw.alicdn.com/tfs/TB1NTkrRXXXXXcKXpXXXXXXXXXX-230-230.png?avatar=1" alt=""><span>分类</span></a></div>
+                <div class="map-column"><a href=""><img
+                        src="https://gw.alicdn.com/tfs/TB11OCuRpXXXXaBXFXXXXXXXXXX-230-230.png?avatar=1" alt=""><span>苏宁易购</span></a>
+                </div>
+                <div class="map-column"><a href=""><img
+                        src="https://gw.alicdn.com/tfs/TB1OaIwRXXXXXapXpXXXXXXXXXX-230-230.png?avatar=1" alt=""><span>天猫超市</span></a>
+                </div>
+                <div class="map-column"><a href=""><img
+                        src="https://gw.alicdn.com/tfs/TB1I9ApRXXXXXcGXpXXXXXXXXXX-230-230.png?avatar=1" alt=""><span>天猫国际</span></a>
+                </div>
+                <div class="map-column"><a href=""><img
+                        src="https://gw.alicdn.com/tfs/TB126IaRXXXXXcXXVXXXXXXXXXX-230-230.png?avatar=1" alt=""><span>聚划算</span></a>
+                </div>
+                <div class="map-column"><a href=""><img
+                        src="https://gw.alicdn.com/tfs/TB1NTkrRXXXXXcKXpXXXXXXXXXX-230-230.png?avatar=1"
+                        alt=""><span>分类</span></a></div>
             </section>
-            <section class="carousel">
-                <ul>
-                    <li><a href=""><img src="" alt=""></a></li>
-                    <li><a href=""><img src="" alt=""></a></li>
-                    <li><a href=""><img src="" alt=""></a></li>
-                    <li><a href=""><img src="" alt=""></a></li>
-                    <li><a href=""><img src="" alt=""></a></li>
+            <section class="carousel swiper-container">
+                <ul class="swiper-wrapper">
+                    <li class="swiper-slide"><a href=""> <img src="" alt=""></a></li>
+                    <li class="swiper-slide"><a href=""> <img src="" alt=""></a></li>
+                    <li class="swiper-slide"><a href=""> <img src="" alt=""></a></li>
+                    <li class="swiper-slide"><a href=""> <img src="" alt=""></a></li>
+                    <li class="swiper-slide"><a href=""> <img src="" alt=""></a></li>
                 </ul>
             </section>
             <div class="hot-item">
@@ -54,8 +68,11 @@
             </div>
         </div>
     </div>
+    <div class="back-top"><img src="https://img.alicdn.com/tps/TB1WIQfJFXXXXbqXFXXXXXXXXXX-88-88.png" alt=""></div>
 </div>
-
+<footer>
+    <h2>-THE END-</h2>
+</footer>
 </body>
 <script src="scripts/tool.js"></script>
 <script src="scripts/index.js"></script>
